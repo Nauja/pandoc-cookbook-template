@@ -5,7 +5,7 @@ Template for generating Just One Cookbook themed printable recipes from YAML met
 
 ### Usage example
 
-Generate a self-contained HTML document for example Melon Pan recipe:
+Generate a self-contained HTML document from `melon-pan.yaml` example recipe:
 
     pandoc \
       -o example/melon-pan.html \
