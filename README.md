@@ -16,3 +16,12 @@ Generate a self-contained HTML document from `bibimbap.yaml` example recipe:
       --metadata image=example/bibimbap.jpg \
       --self-contained \
       example/bibimbap.yaml
+
+You can generate `sandbox.yaml` - a recipe used to showcase all things you can write and some specific cases - the same way:
+
+    pandoc \
+      -o example/sandbox.html \
+      --template template.html \
+      --css template.css \
+      --self-contained \
+      example/sandbox.yaml
