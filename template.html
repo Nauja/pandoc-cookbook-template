@@ -1,0 +1,144 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"$if(lang)$ lang="$lang$" xml:lang="$lang$"$endif$>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title>$if(title-prefix)$$title-prefix$ - $endif$$pagetitle$</title>
+  $for(css)$
+  <link rel="stylesheet" type="text/css" href="$css$">
+  $endfor$
+</head>
+<body class="wprm-print">
+  <div class="wprm-recipe wprm-recipe-side-by-side">
+    <!-- Top part, recipe metadata -->
+    <div class="wprm-recipe-top">
+      $if(image)$
+      <div class="wprm-recipe-image-container">
+        <div class="wprm-recipe-image">
+          <img width="200" height="200" src="$image$" class="attachment-200x200 size-200x200" sizes="(max-width: 200px) 100vw, 200px">
+        </div>
+      </div>
+      $endif$
+        <h2 class="wprm-recipe-name">
+        $title$ <div class="wprm-recipe-rating wprm-user-rating wprm-user-rating-allowed" data-average="4.48" data-count="21" data-total="94" data-user="0"><span class="wprm-rating-star wprm-rating-star-1 wprm-rating-star-full" data-rating="1"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="16px" viewBox="0 0 24 24"><g transform="translate(0, 0)"><polygon fill="none" stroke="#343434" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" points="12,2.6 15,9 21.4,9 16.7,13.9 18.6,21.4 12,17.6 5.4,21.4 7.3,13.9 2.6,9 9,9 " stroke-linejoin="miter"></polygon></g></svg></span><span class="wprm-rating-star wprm-rating-star-2 wprm-rating-star-full" data-rating="2"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="16px" viewBox="0 0 24 24"><g transform="translate(0, 0)"><polygon fill="none" stroke="#343434" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" points="12,2.6 15,9 21.4,9 16.7,13.9 18.6,21.4 12,17.6 5.4,21.4 7.3,13.9 2.6,9 9,9 " stroke-linejoin="miter"></polygon></g></svg></span><span class="wprm-rating-star wprm-rating-star-3 wprm-rating-star-full" data-rating="3"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="16px" viewBox="0 0 24 24"><g transform="translate(0, 0)"><polygon fill="none" stroke="#343434" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" points="12,2.6 15,9 21.4,9 16.7,13.9 18.6,21.4 12,17.6 5.4,21.4 7.3,13.9 2.6,9 9,9 " stroke-linejoin="miter"></polygon></g></svg></span><span class="wprm-rating-star wprm-rating-star-4 wprm-rating-star-full" data-rating="4"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="16px" viewBox="0 0 24 24"><g transform="translate(0, 0)"><polygon fill="none" stroke="#343434" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" points="12,2.6 15,9 21.4,9 16.7,13.9 18.6,21.4 12,17.6 5.4,21.4 7.3,13.9 2.6,9 9,9 " stroke-linejoin="miter"></polygon></g></svg></span><span class="wprm-rating-star wprm-rating-star-5 wprm-rating-star-full" data-rating="5"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="16px" viewBox="0 0 24 24"><g transform="translate(0, 0)"><polygon fill="none" stroke="#343434" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" points="12,2.6 15,9 21.4,9 16.7,13.9 18.6,21.4 12,17.6 5.4,21.4 7.3,13.9 2.6,9 9,9 " stroke-linejoin="miter"></polygon></g></svg></span></div> </h2>
+        <div class="wprm-recipe-meta">
+        $if(course)$
+        <div class="wprm-recipe-course-container">
+          <span class="wprm-recipe-details-name wprm-recipe-course-name">Course:</span>
+          <span class="wprm-recipe-course">$course$ </span>
+        </div>
+        $endif$
+        $if(cuisine)$
+        <div class="wprm-recipe-cuisine-container">
+          <span class="wprm-recipe-details-name wprm-recipe-cuisine-name">Cuisine:</span>
+          <span class="wprm-recipe-cuisine">$cuisine$ </span>
+        </div>
+        $endif$
+        $if(keyword)$
+        <div class="wprm-recipe-keyword-container">
+        <span class="wprm-recipe-details-name wprm-recipe-keyword-name">Keyword:</span>
+        <span class="wprm-recipe-keyword">$keyword$ </span>
+        </div>
+        $endif$
+        $if(time)$$for(time)$
+        <div class="wprm-recipe-prep-time-container">
+          <span class="wprm-recipe-details-name wprm-recipe-prep-time-name">$time.group$ Time:</span>
+          $if(time.list)$$for(time.list)$
+          <span class="wprm-recipe-details wprm-recipe-details-$time.split.unit$ wprm-recipe-prep_time wprm-recipe-prep_time-$time.split.unit$">$time.list.value$ </span>
+          <span class="wprm-recipe-details-unit wprm-recipe-details-unit-$time.split.unit$ wprm-recipe-prep_time-unit wprm-recipe-prep_timeunit-$time.split.unit$">$time.list.unit$</span>
+          $endfor$$endif$
+        </div>
+        $endfor$$endif$
+        $if(servings)$
+        <div class="wprm-recipe-servings-container">
+          <span class="wprm-recipe-details-name wprm-recipe-servings-name">Servings:</span>
+          $for(servings)$
+          <span class="wprm-recipe-details wprm-recipe-servings wprm-recipe-servings-56608">$servings.value$</span>
+          <span class="wprm-recipe-details-unit wprm-recipe-servings-unit">$servings.unit$</span>
+          $endfor$
+        </div>
+        $endif$
+      </div>
+      $if(summary)$
+      <div class="wprm-recipe-summary">$summary$</div>
+      $endif$
+    </div>
+    <!-- End of top part -->
+    <!-- Bottom part, ingredients, instructions and notes -->
+    <div class="wprm-recipe-main wprm-color-border wprm-clearfix">
+      <!-- Left part, ingredients list -->
+      $if(ingredients)$
+      <div class="wprm-recipe-ingredients-container">
+        <h3 class="wprm-recipe-header">Ingredients</h3>
+        $for(ingredients)$
+        <div class="wprm-recipe-ingredient-group">
+          <h4 class="wprm-recipe-group-name wprm-recipe-ingredient-group-name">$ingredients.group$</h4>
+          <ul class="wprm-recipe-ingredients">
+            $for(ingredients.list)$
+            <li class="wprm-recipe-ingredient">
+              $if(ingredients.list.amount)$
+              <span class="wprm-recipe-ingredient-amount">
+                <span class="wprm-adjustable">$ingredients.list.amount$</span>
+              </span>
+              $if(ingredients.list.unit)$
+              <span class="wprm-recipe-ingredient-unit">$ingredients.list.unit$</span>
+              $endif$
+              $endif$
+              <span class="wprm-recipe-ingredient-name">$ingredients.list.name$</span>
+              $if(ingredients.list.notes)$
+              <span class="wprm-recipe-ingredient-notes">$ingredients.list.notes$</span>
+              $endif$
+            </li>
+            $endfor$
+          </ul>
+        </div>
+        $endfor$
+      </div>
+      $endif$
+      <!-- End of ingredients list -->
+      <!-- Right part, instructions list -->
+      $if(instructions)$
+      <div class="wprm-recipe-instructions-container">
+        <h3 class="wprm-recipe-header">Instructions</h3>
+        $for(instructions)$
+        <div class="wprm-recipe-instruction-group">
+          $if(instructions.group)$
+          <h4 class="wprm-recipe-group-name wprm-recipe-instruction-group-name">$instructions.group$</h4>
+          $endif$
+          $if(instructions.list)$
+          <ol class="wprm-recipe-instructions">
+            $for(instructions.list)$
+            <li class="wprm-recipe-instruction">
+              <div class="wprm-recipe-instruction-text"><p>$instructions.list$</p></div>
+            </li>
+            $endfor$
+          </ol>
+          $endif$
+        </div>
+        $endfor$
+      </div>
+      $endif$
+      <!-- End of instructions list -->
+    </div>
+    <!-- End of bottom part -->
+    <!-- Bottom part, recipe notes -->
+    $if(notes)$
+    <div class="wprm-recipe-notes-container wprm-color-border">
+      <h3 class="wprm-recipe-header">Recipe Notes</h3>
+      $for(notes)$
+      <p>$notes$</p>
+      $endfor$
+    </div>
+    $endif$
+    <!-- End of recipe notes -->
+  </div>
+  <!-- Footer part -->
+  $if(footer)$
+  <div id="wprm-print-footer">
+    <p>$footer$</p>
+  </div>
+  $endif$
+  <!-- End of footer -->
+</body>
+</html>
