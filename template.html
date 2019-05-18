@@ -12,13 +12,15 @@
   <div class="wprm-recipe wprm-recipe-side-by-side">
     <!-- Top part, recipe metadata -->
     <div class="wprm-recipe-top">
-      $if(image)$
       <div class="wprm-recipe-image-container">
         <div class="wprm-recipe-image">
+          $if(image)$
           <img width="200" height="200" src="$image$" class="attachment-200x200 size-200x200" sizes="(max-width: 200px) 100vw, 200px">
+          $else$
+          <div style="width: 200px; height: 200px;"></div>
+          $endif$
         </div>
       </div>
-      $endif$
         <h2 class="wprm-recipe-name">
           $title$
           <!-- Required for stars to be well aligned -->

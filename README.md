@@ -7,12 +7,12 @@ Template for generating Just One Cookbook themed printable recipes from YAML met
 
 ### Usage example
 
-Generate a self-contained HTML document from `melon-pan.yaml` example recipe:
+Generate a self-contained HTML document from `bibimbap.yaml` example recipe:
 
     pandoc \
-      -o example/melon-pan.html \
+      -o example/bibimbap.html \
       --template template.html \
       --css template.css \
-      --metadata image=example/melon-pan.jpg \
+      --metadata image=example/bibimbap.jpg \
       --self-contained \
-      example/melon-pan.yaml
+      example/bibimbap.yaml

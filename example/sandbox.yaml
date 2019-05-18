@@ -1,0 +1,72 @@
+---
+title: Sandbox
+rating:
+  - fill: 1
+  - fill: 1
+  - fill: 1
+  - empty: 1
+  - empty: 1
+course: Main Course
+cuisine: Tutorial
+keyword: sandbox, tutorial
+time:
+  - group: Prep
+    list:
+      - value: 30
+        unit: minutes
+  - group: Cook
+    list:
+      - value: 1
+        unit: hours
+  - group: Total
+    list:
+      - value: 1
+        unit: hours
+      - value: 30
+        unit: minutes
+servings:
+  - value: 1
+    unit: person
+summary: This is used to showcase all you can write and specific cases.
+ingredients:
+  - group: First Group
+    list:
+      - amount: 20
+        unit: g
+        name: something
+        notes: "(This is something)"
+      - amount: 100
+        unit: ml
+        name: something
+      - amount: 1
+        name: egg
+      - name: saucepan
+  - group: Second Group
+    list:
+      - amount: 20
+        unit: g
+        name: something
+        notes: "(This is something)"
+      - amount: 100
+        unit: ml
+        name: something
+      - amount: 1
+        name: egg
+      - name: saucepan
+instructions:
+  - list:
+    - "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin quis dolor consectetur, tempor arcu eget, imperdiet erat. Nulla ac libero pellentesque, eleifend ligula eu, venenatis justo."
+    - "Integer pretium sapien in faucibus vestibulum. Sed elementum risus eget varius consequat. Praesent tempor bibendum lacus, id tincidunt est gravida eget."
+  - group: First Group
+    list:
+      - "Fusce laoreet ligula id lectus tincidunt, ac sollicitudin purus volutpat. Donec imperdiet fringilla ligula vel gravida. In hac habitasse platea dictumst. Duis justo diam, suscipit in facilisis quis, volutpat et erat. Aliquam interdum quis leo nec sagittis. Mauris eget sem et sapien finibus efficitur. Cras et orci ac nulla euismod convallis. Aliquam at felis quis erat finibus rhoncus."
+      - "Nullam dapibus, lorem at sollicitudin convallis, risus dui eleifend mi, eu mollis nulla felis id erat. Proin a fermentum nisi. Proin non lorem mollis, pretium sem vel, vestibulum mi. Nunc id arcu quam. Sed porttitor, dolor sit amet ullamcorper vehicula, lectus libero suscipit eros, nec iaculis leo ex vitae justo. Nulla facilisi. Praesent tristique ante sit amet justo blandit consectetur. Mauris metus purus, sodales a tempus in, porta ut velit. Etiam a metus ut leo ultrices ornare non vitae sem."
+  - group: Second Group
+    list:
+      - "Aliquam elementum imperdiet mi. Aenean erat elit, mattis ac nulla vel, euismod dignissim sem. Etiam sit amet est libero. In ultrices suscipit interdum. Mauris finibus nunc vestibulum sapien laoreet venenatis. Suspendisse luctus interdum pellentesque."
+      - "Nullam et augue neque. Quisque sed magna tincidunt, gravida lacus vestibulum, scelerisque lectus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed at nunc sodales, ultrices dolor non, egestas erat. Donec varius, ex a mollis bibendum, lectus arcu fringilla erat, quis consectetur tellus erat ac lectus."
+notes:
+  - 'Here I can write some notes about this recipe for reader.'
+  - '<b>It''s possible</b> to use HTML tags and to escape single quotes ''.'
+footer: copyright here
+---

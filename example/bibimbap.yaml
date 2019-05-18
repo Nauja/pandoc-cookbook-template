@@ -1,0 +1,99 @@
+---
+title: Stone Bowl Bibimbap
+rating:
+  - fill: 1
+  - fill: 1
+  - fill: 1
+  - fill: 1
+  - fill: 1
+course: Main Course
+cuisine: Korean
+keyword: rice, vegetable, spicy
+time:
+  - group: Prep
+    list:
+      - value: 15
+        unit: minutes
+  - group: Cook
+    list:
+      - value: 15
+        unit: minutes
+  - group: Total
+    list:
+      - value: 30
+        unit: minutes
+servings:
+  - value: 1
+    unit: bowl
+summary: "Learn how to make Bibimbap, a super-popular Korean dish consisting of a bowl of rice mixed with vegetables and a quite sweet spicy sauce."
+ingredients:
+  - group: Rice Bowl
+    list:
+      - amount: 1
+        unit: volume
+        name: sushi rice
+        notes: "(Avoid long rice)"
+      - amount: 1
+        unit: volume
+        name: water
+        notes: "(Same volume as rice)"
+      - amount: 1
+        name: stone bowl
+        notes: "(Don't have one ? See Notes)"
+  - group: Topping
+    list:
+      - amount: some
+        name: tofu
+        notes: "(See Notes about Topping quantities)"
+      - amount: ½
+        name: carrot
+      - amount: ½
+        name: cucumber
+      - amount: some
+        name: soy sprouts
+      - amount: some
+        name: broccoli curds
+        notes: "(Can replace with Spinach)"
+      - amount: 1
+        name: egg
+  - group: Tofu Sauce (Optional)
+    list:
+      - amount: 1
+        unit: tbsp
+        name: sesame oil
+      - amount: 1
+        unit: tbsp
+        name: soy sauce
+  - group: Bibimbap Sauce
+    list:
+      - amount: 1
+        unit: tbsp
+        name: sesame oil
+      - amount: 3
+        unit: tbsp
+        name: soy sauce
+      - amount: 4
+        unit: tsp
+        name: roasted sesame seeds
+      - amount: 4
+        unit: tsp
+        name: sugar
+        notes: "(Honey may work)"
+      - amount: 1
+        unit: pinch
+        name: gochujang
+        notes: "(Korean hot pepper paste)"
+instructions:
+  - list:
+    - "In a stone bowl, put one volume of rinsed sushi rice and one volume of water, cover and let cook over low medium heat until all water has been absorbed (should take about 15 minutes). The rice may be cooked longer than needed as we want it to form a cripsy layer."
+    - "In a small saucepan, put the tofu cut into small dice - you may mix with some sesame oil and soy sauce - then let cook aside over low medium heat."
+    - "While the rice is cooking, cut the carrot and the cucumber into matchsticks, then cut the broccoli curds into small pieces. All the vegetables will be used to cover the rice layer, so you don't have to cut the whole vegetables but only what you need."
+    - "Once the rice is cooked and all water have been absorbed, dispose all groups of vegetables and the small tofu dice on top of rice, forming a wheel. Finally add an egg at the center of the wheel, cover and let cook over low medium heat until the egg yolk is yellow pale and vegetables are ligthly cooked (should take about 15 minutes)."
+    - "While it is cooking, prepare the Bibimbap sauce by mixing the sesame oil, the soy sauce, some roasted sesame seeds and sugar into a bowl. This is enough for a kid friendly version but you may add a pinch of Gochujang for a more spicy and traditional version."
+    - "Once the egg is cooked, carefully remove the stone bowl from heat, then pour the Bibimbap sauce over vegetables and mix everything well."
+    - "This dish is traditionnally eat right in the stone bowl as it allows for the rice to form a crispy layer on the bottom that add a nice texture to this dish."
+notes:
+  - 'Bibimbap is traditionally cooked in a stone bowl which allow for a nice crispy rice. You may not have one but can use any alternative - that can produce this crispy result - such as a small cast iron saucepan.'
+  - 'Quantities of topping ingredients depend on the size of bowl used to cook rice. Basically - as seen on the photo - you need to form a wheel with equal portions of each vegetable over the rice layer. For the same reason, you may not use the whole carrot because you only need a small portion to cover the rice. So feel free to experiment what you like the most.'
+  - 'All preparation is done while rice is cooking, so preparation time includes the time needed to cook rice.'
+---

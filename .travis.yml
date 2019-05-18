@@ -5,4 +5,5 @@ before_install:
 - sudo apt-get install -y texlive-xetex
 
 script:
-  - pandoc -o example/melon-pan.html --template template.html --css template.css --metadata image=example/melon-pan.jpg --self-contained example/melon-pan.yaml
+  - pandoc -o example/bibimbap.html --template template.html --css template.css --metadata image=example/bibimbap.jpg --self-contained example/bibimbap.yaml
+  - pandoc -o example/sandbox.html --template template.html --css template.css --self-contained example/sandbox.yaml
