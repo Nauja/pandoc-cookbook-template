@@ -1,5 +1,11 @@
 ---
 title: "Melon Pan"
+rating:
+  - fill: 1
+  - fill: 1
+  - fill: 1
+  - fill: 1
+  - empty: 1
 course: "Breakfast, Snack"
 cuisine: "JAPANESE"
 keyword: "japanese sweet bread"
