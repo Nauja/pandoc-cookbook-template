@@ -17,6 +17,10 @@ Generate a self-contained HTML document from `bibimbap.yaml` example recipe:
       --self-contained \
       example/bibimbap.yaml
 
+This will generate the following HTML document:
+
+[![Bibimbap Preview](https://raw.githubusercontent.com/Nauja/pandoc-justonecookbook-template/master/example/bibimbap-preview.jpg)](https://raw.githubusercontent.com/Nauja/pandoc-justonecookbook-template/master/example/bibimbap-preview.jpg)
+
 You can generate `sandbox.yaml` - a recipe used to showcase all things you can write and some specific cases - the same way:
 
     pandoc \
