@@ -1,7 +1,7 @@
 pandoc-cookbook-template
 ========================
 
-[![Build Status](https://travis-ci.org/Nauja/pandoc-justonecookbook-template.png?branch=master)](https://travis-ci.org/Nauja/pandoc-cookbook-template)
+[![Build Status](https://travis-ci.org/Nauja/pandoc-cookbook-template.png?branch=master)](https://travis-ci.org/Nauja/pandoc-cookbook-template)
 
 Templates for generating beautiful printable recipes from YAML metadata.
 
