@@ -9,6 +9,7 @@ rating:
 course: Main Course
 cuisine: Korean
 keyword: rice, vegetable, spicy
+difficulty: Easy
 time:
   - group: Prep
     list:

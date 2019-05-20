@@ -1,31 +1,45 @@
-pandoc-justonecookbook-template
-===============================
+pandoc-cookbook-template
+========================
 
-[![Build Status](https://travis-ci.org/Nauja/pandoc-justonecookbook-template.png?branch=master)](https://travis-ci.org/Nauja/pandoc-justonecookbook-template)
+[![Build Status](https://travis-ci.org/Nauja/pandoc-justonecookbook-template.png?branch=master)](https://travis-ci.org/Nauja/pandoc-cookbook-template)
 
-Template for generating Just One Cookbook themed printable recipes from YAML metadata.
+Templates for generating beautiful printable recipes from YAML metadata.
 
 ### Usage example
 
-Generate a self-contained HTML document from `bibimbap.yaml` example recipe:
+Generate a Just One Cookbook themed recipe from `bibimbap.yaml` example:
 
     pandoc \
       -o example/bibimbap.html \
-      --template template.html \
-      --css template.css \
+      --template templates/justonecookbook/index.html \
+      --css templates/justonecookbook/index.css \
       --metadata image=example/bibimbap.jpg \
       --self-contained \
       example/bibimbap.yaml
 
 This will generate the following HTML document:
 
-[![Bibimbap Preview](https://raw.githubusercontent.com/Nauja/pandoc-justonecookbook-template/master/example/bibimbap-preview.jpg)](https://raw.githubusercontent.com/Nauja/pandoc-justonecookbook-template/master/example/bibimbap-preview.jpg)
+[![Bibimbap Preview](https://raw.githubusercontent.com/Nauja/pandoc-cookbook-template/master/example/bibimbap-justonecookbook-preview.jpg)](https://raw.githubusercontent.com/Nauja/pandoc-cookbook-template/master/example/bibimbap-justonecookbook-preview.jpg)
+
+Alternatively, if you generate with the `cuisineaz` template:
+
+    pandoc \
+      -o example/bibimbap.html \
+      --template templates/cuisineaz/index.html \
+      --css templates/cuisineaz/index.css \
+      --metadata image=example/bibimbap.jpg \
+      --self-contained \
+      example/bibimbap.yaml
+
+This will generate the following HTML document:
+
+[![Bibimbap Preview](https://raw.githubusercontent.com/Nauja/pandoc-cookbook-template/master/example/bibimbap-cuisineaz-preview.jpg)](https://raw.githubusercontent.com/Nauja/pandoc-cookbook-template/master/example/bibimbap-cuisineaz-preview.jpg)
 
 You can generate `sandbox.yaml` - a recipe used to showcase all things you can write and some specific cases - the same way:
 
     pandoc \
       -o example/sandbox.html \
-      --template template.html \
-      --css template.css \
+      --template templates/<template>/index.html \
+      --css templates/<template>/index.css \
       --self-contained \
       example/sandbox.yaml

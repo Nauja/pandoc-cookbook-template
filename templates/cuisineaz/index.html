@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>$if(title-prefix)$$title-prefix$ - $endif$$pagetitle$</title>
+  $for(css)$
+  <link rel="stylesheet" type="text/css" href="$css$">
+  $endfor$
+</head>
+<body class="print">
+  <main class="row backwhite">
+    <article class="recipe_main">
+      <!-- Recipe infos -->
+      <h1>$title$</h1>
+      <div class="row recipe_infos">
+        <div id="recipeLeft" class="small-4 columns">
+          <div id="visu_recette" class="txtcenter collapse-small">
+            $if(image)$
+            <img alt="$title$" src="$image$" class="photo mb10 wide">
+            $endif$
+          </div>
+        </div>
+        <div id="recipeRight" class="small-8 columns">
+
+        <div id="recetteNotes" class="hreview-aggregate cazStars medium">
+          <span id="LblRecetteNote">
+            <span class="rating-foreground cazStars medium dblock">
+              $if(rating)$$for(rating)$
+              $if(rating.fill)$
+              <span class="icon-star"></span>
+              $else$
+              $if(rating.half)$
+              <span class="icon-half-star"></span>
+              $else$
+              <span class="icon-graystar"></span>
+              $endif$
+              $endif$
+              $endfor$$endif$
+            </span>
+          </span>
+        </div>
+
+        <!-- Author but we don't care -->
+        <div class="profile ofhidden mt10 mb10" style="width:46px;height:46px;">
+        </div>
+
+        <p>$if(summary)$$summary$$endif$</p>
+        </div>
+      </div>
+      <!-- End of recipe infos -->
+      <!-- Technical infos -->
+      <div class="row">
+        <div class="small-12 columns mt4">
+          <ul class="menu expanded inline-datas">
+            $if(servings)$$for(servings)$
+            <li class="icon-man">
+              <span id="LblRecetteNombre" class="yield">$servings.value$ $servings.unit$</span>
+            </li>
+            $endfor$$endif$
+            $if(time)$$for(time)$
+            <li id="trPrepa" class="time-$time.group$ icon-$time.group$">
+              $if(time.list)$$for(time.list)$
+              <span><span id="LblRecetteTemps$time.group$">$time.list.value$ $time.list.unit$</span><span id="prepTimeISO" class="value-title" title="PT20M"></span></span>
+              $endfor$$endif$
+            </li>
+            $endfor$$endif$
+            $if(difficulty)$
+            <li class="icon-level">
+              <span id="LblRecetteDifficulte">$difficulty$</span>
+            </li>
+            $endif$
+          </ul>
+        </div>
+      </div>
+      <!-- End of technical infos -->
+      <div class="row">
+        <!-- Ingredients -->
+        <div class="small-4 columns recipe_ingredients">
+          <h3 class="titleBackGrey mb0">Ingredients</h3>
+          $if(ingredients)$
+          <ul>
+            $for(ingredients)$
+            $if(ingredients.group)$
+            <li>
+              <span style="text-transform: uppercase; color: #333333; font-family: larsseit-bold-webfont,Helvetica,Arial,sans-serif">$ingredients.group$</span>
+            </li>
+            $endif$
+            $for(ingredients.list)$
+            <li>
+              <span>$ingredients.list.name$</span>
+              $if(ingredients.list.amount)$<span>: $ingredients.list.amount$ $if(ingredients.list.unit)$$ingredients.list.unit$$endif$</span>$endif$
+              $if(ingredients.list.notes)$<span>$ingredients.list.notes$</span>$endif$
+            </li>
+            $endfor$$endfor$
+          </ul>
+          $endif$
+        </div>
+        <!-- End of ingredients -->
+        <!-- Instructions -->
+        <div class="small-8 columns">
+          $if(instructions)$
+          <div id="preparation">
+            <h3 class="titleBackGrey mb5">Instructions</h3>
+            <span>
+              $for(instructions)$
+              $if(instructions.list)$$for(instructions.list)$
+              <p class="p10 "><span class="dblock bold txt-dark-gray step-counter"></span>$instructions.list$</p>
+              $endfor$$endif$
+              $endfor$
+            </span>
+          </div>
+          $endif$
+          $if(notes)$
+          $for(notes)$
+          <p class="fs15 txtgrey6 lh12 mb5 p10">
+            $notes$
+          </p>
+          $endfor$
+          $endif$
+          $if(footer)$
+          <p class="fs15 txtgrey6 lh12 mb5 p10">
+            $footer$
+          </p>
+          $endif$
+        </div>
+      </div>
+    </article>
+  </main>
+  <script type="text/javascript">
+    var x = document.getElementsByClassName("step-counter");
+    [].forEach.call(x, function(element, index) {
+      element.innerHTML = "STEP " + (index + 1);
+    });
+  </script>
+</body>
+</html>

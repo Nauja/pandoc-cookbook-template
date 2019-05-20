@@ -5,5 +5,7 @@ before_install:
 - sudo apt-get install -y texlive-xetex
 
 script:
-  - pandoc -o example/bibimbap.html --template template.html --css template.css --metadata image=example/bibimbap.jpg --self-contained example/bibimbap.yaml
-  - pandoc -o example/sandbox.html --template template.html --css template.css --self-contained example/sandbox.yaml
+  - pandoc -o example/bibimbap.html --template templates/cuisineaz/index.html --css templates/cuisineaz/index.css --metadata image=example/bibimbap.jpg --self-contained example/bibimbap.yaml
+  - pandoc -o example/bibimbap.html --template templates/justonecookbook/index.html --css templates/justonecookbook/index.css --metadata image=example/bibimbap.jpg --self-contained example/bibimbap.yaml
+  - pandoc -o example/sandbox.html --template templates/cuisineaz/index.html --css templates/cuisineaz/index.css --self-contained example/sandbox.yaml
+  - pandoc -o example/sandbox.html --template templates/justonecookbook/index.html --css templates/justonecookbook/index.css --self-contained example/sandbox.yaml

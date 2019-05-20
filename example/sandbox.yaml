@@ -9,6 +9,7 @@ rating:
 course: Main Course
 cuisine: Tutorial
 keyword: sandbox, tutorial
+difficulty: Easy
 time:
   - group: Prep
     list:
@@ -18,17 +19,28 @@ time:
     list:
       - value: 1
         unit: hours
-  - group: Total
-    list:
-      - value: 1
-        unit: hours
       - value: 30
         unit: minutes
+  - group: Total
+    list:
+      - value: 2
+        unit: hours
 servings:
   - value: 1
     unit: person
 summary: This is used to showcase all you can write and specific cases.
 ingredients:
+  - list:
+      - amount: 20
+        unit: g
+        name: something
+        notes: "(This is something)"
+      - amount: 100
+        unit: ml
+        name: something
+      - amount: 1
+        name: egg
+      - name: saucepan
   - group: First Group
     list:
       - amount: 20
