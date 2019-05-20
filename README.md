@@ -21,7 +21,7 @@ This will generate the following HTML document:
 
 [![Bibimbap Preview](https://raw.githubusercontent.com/Nauja/pandoc-cookbook-template/master/example/bibimbap-justonecookbook-preview.jpg)](https://raw.githubusercontent.com/Nauja/pandoc-cookbook-template/master/example/bibimbap-justonecookbook-preview.jpg)
 
-Alternatively, if you generate with the `cuisineaz` template:
+Alternatively, if you want the Cuisine AZ template:
 
     pandoc \
       -o example/bibimbap.html \
