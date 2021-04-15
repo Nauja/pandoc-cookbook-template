@@ -1,7 +1,7 @@
 pandoc-cookbook-template
 ========================
 
-[![Build Status](https://travis-ci.org/Nauja/pandoc-cookbook-template.png?branch=master)](https://travis-ci.org/Nauja/pandoc-cookbook-template)
+[![Pandoc test](https://github.com/Nauja/pandoc-cookbook-template/actions/workflows/pandoc-test.yml/badge.svg)](https://github.com/Nauja/pandoc-cookbook-template/actions/workflows/pandoc-test.yml)
 
 Templates for generating beautiful printable recipes from YAML metadata.
 
