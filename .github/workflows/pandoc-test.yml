@@ -26,26 +26,26 @@ jobs:
         args: "-o example/bibimbap.html --template templates/cuisineaz/index.html --css templates/cuisineaz/index.css --metadata image=example/bibimbap.jpg --self-contained example/bibimbap.yaml"
     - uses: actions/upload-artifact@master
       with:
-        name: cuisineaz-bibimbap.html
+        name: cuisineaz-bibimbap
         path: example/bibimbap.html
     - uses: maxheld83/pandoc@v2
       with:
         args: "-o example/bibimbap.html --template templates/justonecookbook/index.html --css templates/justonecookbook/index.css --metadata image=example/bibimbap.jpg --self-contained example/bibimbap.yaml"
     - uses: actions/upload-artifact@master
       with:
-        name: justonecookbook-bibimbap.html
+        name: justonecookbook-bibimbap
         path: example/bibimbap.html
     - uses: maxheld83/pandoc@v2
       with:
         args: "-o example/sandbox.html --template templates/cuisineaz/index.html --css templates/cuisineaz/index.css --self-contained example/sandbox.yaml"
     - uses: actions/upload-artifact@master
       with:
-        name: cuisineaz-sandbox.html
+        name: cuisineaz-sandbox
         path: example/sandbox.html
     - uses: maxheld83/pandoc@v2
       with:
         args: "-o example/sandbox.html --template templates/justonecookbook/index.html --css templates/justonecookbook/index.css --self-contained example/sandbox.yaml"
     - uses: actions/upload-artifact@master
       with:
-        name: justonecookbook-sandbox.html
+        name: justonecookbook-sandbox
         path: example/sandbox.html
