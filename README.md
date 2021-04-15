@@ -2,6 +2,7 @@ pandoc-cookbook-template
 ========================
 
 [![Pandoc test](https://github.com/Nauja/pandoc-cookbook-template/actions/workflows/pandoc-test.yml/badge.svg)](https://github.com/Nauja/pandoc-cookbook-template/actions/workflows/pandoc-test.yml)
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/Nauja/pandoc-cookbook-template/master/LICENSE)
 
 Templates for generating beautiful printable recipes from YAML metadata.
 
@@ -43,3 +44,7 @@ You can generate `sandbox.yaml` - a recipe used to showcase all things you can w
       --css templates/<template>/index.css \
       --self-contained \
       example/sandbox.yaml
+
+## License
+
+Licensed under the [MIT](LICENSE) License.
