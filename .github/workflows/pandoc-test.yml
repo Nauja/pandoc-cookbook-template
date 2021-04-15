@@ -1,0 +1,35 @@
+# This is a basic workflow to help you get started with Actions
+
+name: Pandoc test
+
+# Controls when the action will run. 
+on:
+  # Triggers the workflow on push or pull request events but only for the master branch
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest]
+
+    steps:
+    - uses: actions/checkout@v2
+    - uses: maxheld83/pandoc@v2
+      with:
+        args: "-o example/bibimbap.html --template templates/cuisineaz/index.html --css templates/cuisineaz/index.css --metadata image=example/bibimbap.jpg --self-contained example/bibimbap.yaml"
+    - uses: maxheld83/pandoc@v2
+      with:
+        args: "-o example/bibimbap.html --template templates/justonecookbook/index.html --css templates/justonecookbook/index.css --metadata image=example/bibimbap.jpg --self-contained example/bibimbap.yaml"
+    - uses: maxheld83/pandoc@v2
+      with:
+        args: "-o example/sandbox.html --template templates/cuisineaz/index.html --css templates/cuisineaz/index.css --self-contained example/sandbox.yaml"
+    - uses: maxheld83/pandoc@v2
+      with:
+        args: "-o example/sandbox.html --template templates/justonecookbook/index.html --css templates/justonecookbook/index.css --self-contained example/sandbox.yaml"
