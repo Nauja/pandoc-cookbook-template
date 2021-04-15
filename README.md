@@ -5,7 +5,7 @@ pandoc-cookbook-template
 
 Templates for generating beautiful printable recipes from YAML metadata.
 
-### Usage example
+## Usage example
 
 Generate a Just One Cookbook themed recipe from `bibimbap.yaml` example:
 
